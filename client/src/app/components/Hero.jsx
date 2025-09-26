@@ -49,7 +49,7 @@ export default function Hero() {
                                     priority
                                 />
                                 <div className="absolute bottom-4 left-4 bg-lime-400 text-black px-4 py-2 rounded-full font-bold text-sm md:text-base shadow-lg z-30">
-                                    HI
+                                    Connect
                                 </div>
                                 <a
                                     href="/linktree"

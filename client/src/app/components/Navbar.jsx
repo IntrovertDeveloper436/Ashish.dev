@@ -40,10 +40,10 @@ export default function Navbar() {
                     {/* Connect Button with subtle blinking dot */}
                     <div className="relative flex items-center">
                         <Link
-                            href="/connect"
+                            href="/login"
                             className="bg-lime-400 text-black font-semibold rounded-full px-5 py-1 shadow-md transition-colors duration-200 relative z-10"
                         >
-                            Connect
+                            Login
                         </Link>
                         <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-lime-400 rounded-full shadow-[0_0_8px_2px_rgba(163,230,53,0.8)] animate-slow-blink z-0"></span>
                     </div>

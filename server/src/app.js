@@ -27,7 +27,15 @@ app.set('JWT_SECRET', process.env.JWT_SECRET);
 app.set('JWT_EXPIRES_IN', process.env.JWT_EXPIRES_IN || '1d');
 
 //Middleware Setup
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",   // frontend URL
+    credentials: true,                 // allow cookies / Authorization headers
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(cookieParser());
 app.use(express.json({ limit: '40kb' }));
 app.use(express.urlencoded({ limit: '40kb', extended: true }));
